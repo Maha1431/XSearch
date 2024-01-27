@@ -46,7 +46,7 @@ function Search()
   ))
     ) : (
         filteredCountries.map((cn, idx) => (
-     <div className="card" key={idx}>
+     <div className="countryCard" key={idx}>
       <img src={cn.flags.png} alt={`img of ${cn.name.common}`}  className="img"/>
       <h2>{cn.name.common}</h2>
     </div>
