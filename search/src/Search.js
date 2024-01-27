@@ -24,7 +24,6 @@ function Search()
 
     const filteredCountries = countries
     .filter((country) =>
-      country.name.common &&
       country.name.common.toLowerCase().includes(search.toLowerCase())
     )
     .sort((a, b) => a.name.common.localeCompare(b.name.common));
