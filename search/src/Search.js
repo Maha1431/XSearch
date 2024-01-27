@@ -32,9 +32,11 @@ function Search()
 
   return(
     <div className='box'>
+        <div className='st'>
     <input type='text' className='search' value={search} onChange={(e) => setSearch(e.target.value)} 
     placeholder='Search for  countries'
     />
+    </div>
     <div className="container">
     {search === '' ? (
     countries.map((country, idx) => (
