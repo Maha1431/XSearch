@@ -40,7 +40,7 @@ function Search()
     <div className="container">
     {search === '' ? (
     countries.map((country, idx) => (
-    <div className="card" key={idx}>
+    <div className="countryCard" key={idx}>
       <img src={country.flags.png} alt={`img of ${country.name.common}`}  className="img"/>
       <h2>{country.name.common}</h2>
     </div>
